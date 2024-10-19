@@ -1,12 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using UnityEditor.Rendering;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour
+[RequireComponent(typeof(Rigidbody), typeof(CameraController))]
+public class BasePlayerController : MonoBehaviour
 {
     /*
     A FAIRE:
@@ -14,30 +9,28 @@ public class PlayerController : MonoBehaviour
     Faire en sorte de pouvoir tourner la cam‚ra sur l'axe X.
     */
 
+
+    [Header("ParamŠtres des mouvements", order = 0)]
     public bool inputEnabled = false;
     
-    [SerializeField] private float moveSpeed = 3f;
-    [SerializeField] private float mouseSensitivity = 50f; 
-
-
-
+    [SerializeField] protected float moveSpeed = 3f;
 
     // Variables autres
-    private Rigidbody rb;
-    private Vector3 moveDir;
-
-    private float xRot = 0, yRot = 0;
+    public Rigidbody rb;
+    public Vector3 moveDir;
     
-    void Start()
+    protected virtual void Start()
     {
         // Initialisation des variables
         rb = GetComponent<Rigidbody>();
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     
-    void Update()
+    protected virtual void Update()
     {
+        if(!inputEnabled){
+            return;
+        }
         // Initialisation variable
         
 
@@ -46,18 +39,14 @@ public class PlayerController : MonoBehaviour
         float keyY = Input.GetAxisRaw("Vertical");
         moveDir = (transform.forward * keyY + transform.right * keyX).normalized;
 
-        // Mouvement souris
-        yRot += Input.GetAxisRaw("Mouse X") * mouseSensitivity;
-        xRot -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
+
     }
 
-    void FixedUpdate(){
+    protected virtual void FixedUpdate(){
         // Interaction avec le moteur physique
 
         // Mouvement clavier
-        rb.velocity = moveDir * moveSpeed;
-
-        // Mouvement souris
-        rb.rotation = Quaternion.Euler(0, yRot, 0);
+        rb.velocity = new Vector3(moveDir.x * moveSpeed, rb.velocity.y, moveDir.z * moveSpeed);
+        
     }
 }
