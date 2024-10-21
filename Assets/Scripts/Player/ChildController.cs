@@ -6,24 +6,22 @@ using UnityEngine;
 
 public class ChildController : BasePlayerController
 {
-    [Header("ParamŠtres sp‚cifiques de l'enfant", order = 1)]
-    public float jumpForce = 1f;
-
-
+    [Header("ParamŠtres sp‚cifiques de l'enfant", order = 2)]
+    [SerializeField] private float jumpForce = 1f;
+    private bool jumpState;
 
 
     // Variables autres
-    [SerializeField]private bool isGrounded;
-    [SerializeField] private bool jumpState;
-    protected override void Start()
-    {
-        base.Start();
-    }
+
+    // Header pour l'arme
+    // arme du joueur
 
     protected override void Update()
     {
+        if(inputEnabled){
+            return;
+        }
         base.Update();
-        
         if(Input.GetButtonDown("Jump") && isGrounded){
             jumpState = true;
         }

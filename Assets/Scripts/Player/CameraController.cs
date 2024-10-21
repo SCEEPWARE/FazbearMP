@@ -14,14 +14,14 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
+        _cameraObject = Camera.main.gameObject;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!gameObject.GetComponent<BasePlayerController>().inputEnabled){
+        if(!gameObject.GetComponent<BasePlayerController>().cameraEnabled){
             return;
         }
         // Mouvement souris

@@ -1,3 +1,5 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(CameraController))]
@@ -12,13 +14,33 @@ public class BasePlayerController : MonoBehaviour
 
     [Header("ParamŠtres des mouvements", order = 0)]
     public bool inputEnabled = false;
-    
-    [SerializeField] protected float moveSpeed = 3f;
+    public bool cameraEnabled = true;
+
+    [SerializeField] protected float walkSpeed = 3f;
+    [SerializeField] protected float runSpeed = 5f;
+    [SerializeField] protected float maxStamina;
+    protected float stamina{
+        get{
+            return _stamina;
+        } set{
+            _stamina = Mathf.Clamp(value, 0f, maxStamina);
+        }
+    }
+    [SerializeField] protected float staminaRegainTime;
+    [SerializeField] protected float staminaRegainSpeed;
+    protected float staminaWaitTime;
+    protected float moveSpeed;
 
     // Variables autres
     public Rigidbody rb;
     public Vector3 moveDir;
-    
+    [SerializeField] private LayerMask levelLayer;
+    [SerializeField] private Transform groundCheckPosition;
+
+    [Header("Informations", order = 1)]
+    public bool isGrounded;
+    [SerializeField] protected float _stamina;
+
     protected virtual void Start()
     {
         // Initialisation des variables
@@ -39,6 +61,22 @@ public class BasePlayerController : MonoBehaviour
         float keyY = Input.GetAxisRaw("Vertical");
         moveDir = (transform.forward * keyY + transform.right * keyX).normalized;
 
+        moveSpeed = Input.GetButton("Sprint") && stamina > 0 ? runSpeed : walkSpeed;
+
+        if(moveSpeed == runSpeed){
+            stamina -= Time.deltaTime;
+            Debug.Log(stamina);
+            staminaWaitTime = staminaRegainTime;
+        }
+
+        if(moveSpeed != runSpeed){
+            staminaWaitTime -= Time.deltaTime;
+            if(staminaWaitTime < 0){
+                stamina += Time.deltaTime * staminaRegainSpeed;
+                Debug.Log(stamina);
+            }
+        }
+
 
     }
 
@@ -47,6 +85,9 @@ public class BasePlayerController : MonoBehaviour
 
         // Mouvement clavier
         rb.velocity = new Vector3(moveDir.x * moveSpeed, rb.velocity.y, moveDir.z * moveSpeed);
+
+        // Check si le joueur touche le sol
+        isGrounded = Physics.CheckSphere(groundCheckPosition.position, -0.1f, levelLayer);
         
     }
 }
