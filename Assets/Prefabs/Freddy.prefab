@@ -146,7 +146,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a08c1d1986df5e409da570a2ef2e405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  projectilePrefab: {fileID: 1628379505760497225, guid: 11636d1cc45d0cf43ac251a020fae4c6, type: 3}
-  firepoint: {fileID: 3981683999977133413, guid: 9fc72f5515a52ac40b29e271b3c8259d, type: 3}
+  moveSpeed: 5
+  projectilePrefab: {fileID: 1628379505760497225, guid: 11636d1cc45d0cf43ac251a020fae4c6,
+    type: 3}
+  firepoint: {fileID: 3981683999977133413, guid: 9fc72f5515a52ac40b29e271b3c8259d,
+    type: 3}
   projectileSpeed: 10
   initialPosition: {x: -10, y: 0}
-  moveAmount: 100
-  moveInterval: 1
