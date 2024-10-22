@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class pizza_script : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float lifeTime = 3f;
+    public int damage = 1; // Nombre de dégâts que le projectile inflige
+
     void Start()
     {
+        // Détruire le projectile après un certain temps
         Destroy(gameObject, lifeTime);
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        // Optionnel : tu peux vérifier si le projectile touche un certain type d'objet (par exemple, un ennemi)
-        if (hitInfo.CompareTag("Enemy"))
+        Debug.Log("Collision détectée avec : " + hitInfo.name); // Pour voir si la collision est détectée
+
+        // Vérifier si l'objet touché est un ennemi en cherchant le script EnemyHealth
+        EnemyHealth enemy = hitInfo.GetComponent<EnemyHealth>();
+
+        if (enemy != null)
         {
-            // Code pour infliger des dégâts à l'ennemi, si tu as un système de santé
-            Destroy(hitInfo.gameObject); // Détruire l'ennemi
+            // Infliger des dégâts à l'ennemi
+            enemy.TakeDamage(damage);
         }
 
         // Détruire le projectile après la collision
         Destroy(gameObject);
     }
-
-
 }
