@@ -8,9 +8,4 @@ public class ItemData : ScriptableObject
     public string itemID;
     public string itemName;
     public GameObject worldItem;
-    public GameObject handItem;
-
-    void Update(){
-        
-    }
 }
