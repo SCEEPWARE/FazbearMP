@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea0a01eddcb86b042b52375189ce37cc, type: 3}
-  m_Name: fazcam
+  m_Name: flashlightData
   m_EditorClassIdentifier: 
-  itemID: fazcam
-  itemName: Faz Camera
-  worldItem: {fileID: 0}
-  handItem: {fileID: 0}
+  itemID: flashlight
+  itemName: Flashlight
+  worldItem: {fileID: 1985083691227809942, guid: c24f7307e33d446428efade9902f8fdb,
+    type: 3}

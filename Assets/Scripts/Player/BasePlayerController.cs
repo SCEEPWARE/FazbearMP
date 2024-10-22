@@ -63,7 +63,7 @@ public class BasePlayerController : MonoBehaviour
 
         moveSpeed = Input.GetButton("Sprint") && stamina > 0 ? runSpeed : walkSpeed;
 
-        if(moveSpeed == runSpeed){
+        if(moveSpeed == runSpeed && moveDir.magnitude > 0){
             stamina -= Time.deltaTime;
             Debug.Log(stamina);
             staminaWaitTime = staminaRegainTime;
