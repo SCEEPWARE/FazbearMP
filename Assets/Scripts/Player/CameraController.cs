@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,20 +11,41 @@ public class CameraController : MonoBehaviour
     [Header("ParamŠtres de la cam‚ra", order = 0)]
     [SerializeField] private float mouseSensitivity = 5f; 
     [SerializeField] private Vector3 camOffset;
+    [SerializeField] private float viewBobbingForce;
+    [SerializeField] private float viewBobbingSpeed;
 
-    // Start is called before the first frame update
+
+    private float bobbingTimer = 0;
+    private float smoothSpeed = 0;
+
+    // R‚f‚rence au player controller (pour des variables)
+    private BasePlayerController basePlayerController;
+
     void Start()
     {
+        // R‚f‚rence + verrouillage du curseur
         _cameraObject = Camera.main.gameObject;
+        basePlayerController = gameObject.GetComponent<BasePlayerController>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        if(!gameObject.GetComponent<BasePlayerController>().cameraEnabled){
+        // Si la cam‚ra est d‚sactiv‚e, on ne fait rien
+        if(!basePlayerController.cameraEnabled){
             return;
         }
+
+        // view bobbing (mouvement de la cam‚ra lorsqu'on se d‚place, on ne veut qu'un demi-cercle donc on prend la valeur absolu du sinus pour le mouvement vertical)
+
+        Vector3 bobbingVector = new Vector3();
+
+        float clampedSpeed = basePlayerController.moveSpeed / basePlayerController.runSpeed;
+        bobbingVector = clampedSpeed * Mathf.Abs(Mathf.Sin(viewBobbingSpeed * bobbingTimer * clampedSpeed)) * viewBobbingForce * -transform.up + clampedSpeed * Mathf.Sin(viewBobbingSpeed * bobbingTimer * clampedSpeed) * viewBobbingForce * transform.right;
+        bobbingTimer = basePlayerController.moveDir.magnitude > 0 ? bobbingTimer + Time.deltaTime : 0;
+        // Debug.Log(clampedSpeed);
+
         // Mouvement souris
         yRot += Input.GetAxisRaw("Mouse X") * mouseSensitivity;
         xRot -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
@@ -31,7 +53,7 @@ public class CameraController : MonoBehaviour
         
         gameObject.transform.rotation = Quaternion.Euler(0, yRot, 0);
 
-        _cameraObject.transform.position = gameObject.transform.position + camOffset;
+        _cameraObject.transform.position = gameObject.transform.position + camOffset + bobbingVector;
         _cameraObject.transform.rotation = Quaternion.Euler(xRot, yRot, 0);
     }
 }

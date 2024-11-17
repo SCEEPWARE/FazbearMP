@@ -16,8 +16,8 @@ public class BasePlayerController : MonoBehaviour
     public bool inputEnabled = false;
     public bool cameraEnabled = true;
 
-    [SerializeField] protected float walkSpeed = 3f;
-    [SerializeField] protected float runSpeed = 5f;
+    public float walkSpeed = 3f;
+    public float runSpeed = 5f;
     [SerializeField] protected float maxStamina;
     protected float stamina{
         get{
@@ -29,7 +29,7 @@ public class BasePlayerController : MonoBehaviour
     [SerializeField] protected float staminaRegainTime;
     [SerializeField] protected float staminaRegainSpeed;
     protected float staminaWaitTime;
-    protected float moveSpeed;
+    [NonSerialized] public float moveSpeed;
 
     // Variables autres
     public Rigidbody rb;
@@ -61,11 +61,14 @@ public class BasePlayerController : MonoBehaviour
         float keyY = Input.GetAxisRaw("Vertical");
         moveDir = (transform.forward * keyY + transform.right * keyX).normalized;
 
+
+
         moveSpeed = Input.GetButton("Sprint") && stamina > 0 ? runSpeed : walkSpeed;
+        moveSpeed = moveDir.magnitude > 0? moveSpeed : 0;
 
         if(moveSpeed == runSpeed && moveDir.magnitude > 0){
             stamina -= Time.deltaTime;
-            Debug.Log(stamina);
+            // Debug.Log(stamina);
             staminaWaitTime = staminaRegainTime;
         }
 
@@ -73,7 +76,7 @@ public class BasePlayerController : MonoBehaviour
             staminaWaitTime -= Time.deltaTime;
             if(staminaWaitTime < 0){
                 stamina += Time.deltaTime * staminaRegainSpeed;
-                Debug.Log(stamina);
+                // Debug.Log(stamina);
             }
         }
 

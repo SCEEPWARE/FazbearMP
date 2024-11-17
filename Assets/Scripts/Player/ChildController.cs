@@ -52,8 +52,7 @@ public class ChildController : BasePlayerController
         // Si on souhaite drop un item;
         if(item != null){
             if(Input.GetKeyDown(KeyCode.G)){
-                Instantiate(item.GetComponent<ItemBehaviour>().itemData.worldItem, itemSpawnPos.position, itemSpawnPos.rotation);
-                Destroy(item);
+                item.GetComponent<ItemBehaviour>().DropItem();
             }
         }
     }
@@ -74,8 +73,7 @@ public class ChildController : BasePlayerController
         {
             if (Input.GetKey(KeyCode.E) && item == null)
             {
-                item = hit.collider.GetComponent<PickableItem>().item;
-                Destroy(hit.collider.gameObject);
+                hit.collider.gameObject.GetComponent<PickableItem>().PickUp(gameObject);
             }
         }
     }

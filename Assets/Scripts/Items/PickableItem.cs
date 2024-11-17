@@ -7,4 +7,9 @@ public class PickableItem : MonoBehaviour
 {
     public ItemData itemData;
     public GameObject item;
+
+    public virtual void PickUp(GameObject activator){
+        activator.GetComponent<ChildController>().item = this.item;
+        Destroy(gameObject);
+    }
 }

@@ -10,4 +10,8 @@ public class ItemBehaviour : MonoBehaviour
 
     public virtual void MainFire(){}
     public virtual void SecondaryFire(){}
+    public virtual void DropItem(){
+        Instantiate(itemData.worldItem, transform.position, transform.rotation);
+        Destroy(gameObject);
+    }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3008904435637444496}
   - component: {fileID: 4012532299173411510}
   - component: {fileID: 4706319008859380561}
-  - component: {fileID: 6836033582842462132}
+  - component: {fileID: 6946531519658514729}
   - component: {fileID: 7045422202244558992}
   m_Layer: 8
   m_Name: DroppedFazerblaster
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6836033582842462132
+--- !u!114 &6946531519658514729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,11 +116,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1601313647573023197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7d0d34772f9bf24b988f0315a84c006, type: 3}
+  m_Script: {fileID: 11500000, guid: 7431fbb200795aa4890c1c2a016ff555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 0}
   item: {fileID: 2780900716256470387, guid: 53dc0f87b5e6be54e84c3a0d9fe8bdf0, type: 3}
+  ammo: 5
 --- !u!54 &7045422202244558992
 Rigidbody:
   m_ObjectHideFlags: 0
