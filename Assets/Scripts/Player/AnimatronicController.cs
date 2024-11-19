@@ -12,6 +12,9 @@ public class AnimatronicController : BasePlayerController
     protected override void Update()
     {
         base.Update();
+        if(!inputEnabled){
+            return;
+        }
 
         // Pour tuer l'enfant
         if(Input.GetButtonDown("Fire1")){
@@ -20,7 +23,7 @@ public class AnimatronicController : BasePlayerController
                 if (hit.collider.TryGetComponent<ChildController>(out ChildController childCtrl))
                 {
                     childCtrl.inputEnabled = false;
-                    Destroy(childCtrl.gameObject);
+                    // Destroy(childCtrl.gameObject);
                 }
             }
         }

@@ -1,0 +1,349 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LeftArm
+  m_Mask: 00000000000000000000000000000000000000000100000000000000010000000000000000000000000000000100000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: RIG_Gregory
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/L_AnkleIK_tracking_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/L_AnkleIK_tracking_jnt/L_AnkleIK_tracking_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/L_Knee_PV_tracking_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/L_Knee_PV_tracking_jnt/L_Knee_PV_tracking_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/R_AnkleIK_tracking_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/R_AnkleIK_tracking_jnt/R_AnkleIK_tracking_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/R_Knee_PV_tracking_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/R_Knee_PV_tracking_jnt/R_Knee_PV_tracking_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/L_UpperLeg_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/L_UpperLeg_jnt/L_Knee_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/L_UpperLeg_jnt/L_Knee_jnt/L_Ankle_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/L_UpperLeg_jnt/L_Knee_jnt/L_Ankle_jnt/L_Toe_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/L_UpperLeg_jnt/L_Knee_jnt/L_Ankle_jnt/L_Toe_jnt/L_ToeEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/L_UpperLeg_jnt/L_Knee_jnt/L_Ankle_jnt/L_Toe_jnt/L_ToeEND_jnt/L_ToeEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/R_UpperLeg_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/R_UpperLeg_jnt/R_Knee_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/R_UpperLeg_jnt/R_Knee_jnt/R_Ankle_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/R_UpperLeg_jnt/R_Knee_jnt/R_Ankle_jnt/R_Toe_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/R_UpperLeg_jnt/R_Knee_jnt/R_Ankle_jnt/R_Toe_jnt/R_ToeEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/R_UpperLeg_jnt/R_Knee_jnt/R_Ankle_jnt/R_Toe_jnt/R_ToeEND_jnt/R_ToeEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Forearm_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Forearm_jnt/L_Watch_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Forearm_jnt/L_Watch_jnt/L_Watch_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_PinkyA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_PinkyA_jnt/L_PinkyB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_PinkyA_jnt/L_PinkyB_jnt/L_PinkyC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_PinkyA_jnt/L_PinkyB_jnt/L_PinkyC_jnt/L_PinkyEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_PinkyA_jnt/L_PinkyB_jnt/L_PinkyC_jnt/L_PinkyEND_jnt/L_PinkyEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_RingA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_RingA_jnt/L_RingB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_RingA_jnt/L_RingB_jnt/L_RingC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_RingA_jnt/L_RingB_jnt/L_RingC_jnt/L_RingEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotA_jnt/L_RingA_jnt/L_RingB_jnt/L_RingC_jnt/L_RingEND_jnt/L_RingEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_IndexA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_IndexA_jnt/L_IndexB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_IndexA_jnt/L_IndexB_jnt/L_IndexC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_IndexA_jnt/L_IndexB_jnt/L_IndexC_jnt/L_IndexEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_IndexA_jnt/L_IndexB_jnt/L_IndexC_jnt/L_IndexEND_jnt/L_IndexEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_MiddleA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_MiddleA_jnt/L_MiddleB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_MiddleA_jnt/L_MiddleB_jnt/L_MiddleC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_MiddleA_jnt/L_MiddleB_jnt/L_MiddleC_jnt/L_MiddleEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_MiddleA_jnt/L_MiddleB_jnt/L_MiddleC_jnt/L_MiddleEND_jnt/L_MiddleEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_ThumbA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_ThumbA_jnt/L_ThumbB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_ThumbA_jnt/L_ThumbB_jnt/L_ThumbC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_ThumbA_jnt/L_ThumbB_jnt/L_ThumbC_jnt/L_ThumbEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_CurlPivotB_jnt/L_ThumbA_jnt/L_ThumbB_jnt/L_ThumbC_jnt/L_ThumbEND_jnt/L_ThumbEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_Prop_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_Shoulder_jnt/L_Elbow_jnt/L_Wrist_jnt/L_Prop_jnt/L_Prop_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_ShoulderTwist_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/L_Clavicle_jnt/L_ShoulderTwist_jnt/L_ShoulderTwist_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/JawEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/JawEND_jnt/JawEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/L_CornerLip_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/L_CornerLip_jnt/L_CornerLip_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/L_LowerLipA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/L_LowerLipA_jnt/L_LowerLipA_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/L_LowerLipB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/L_LowerLipB_jnt/L_LowerLipB_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/LowerLipMid_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/LowerLipMid_jnt/LowerLipMid_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/R_CornerLip_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/R_CornerLip_jnt/R_CornerLip_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/R_LowerLipA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/R_LowerLipA_jnt/R_LowerLipA_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/R_LowerLipB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/LipsLowerAll_jnt/R_LowerLipB_jnt/R_LowerLipB_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/TeethLower_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/TeethLower_jnt/Tongue1_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/TeethLower_jnt/Tongue1_jnt/Tongue2_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/TeethLower_jnt/Tongue1_jnt/Tongue2_jnt/Tongue3_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/TeethLower_jnt/Tongue1_jnt/Tongue2_jnt/Tongue3_jnt/TongueEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Jaw_jnt/TeethLower_jnt/Tongue1_jnt/Tongue2_jnt/Tongue3_jnt/TongueEND_jnt/TongueEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Brow_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Brow_jnt/L_Brow_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Cheek_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Cheek_jnt/L_Cheek_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Eye_ALL_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Eye_ALL_jnt/L_Eye_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Eye_ALL_jnt/L_Eye_jnt/L_Eye_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Eye_ALL_jnt/L_Eyelid_Lower_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Eye_ALL_jnt/L_Eyelid_Lower_jnt/L_Eyelid_Lower_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Eye_ALL_jnt/L_Eyelid_Upper_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/L_Eye_ALL_jnt/L_Eyelid_Upper_jnt/L_Eyelid_Upper_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/L_UpperLipA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/L_UpperLipA_jnt/L_UpperLipA_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/L_UpperLipB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/L_UpperLipB_jnt/L_UpperLipB_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/R_UpperLipA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/R_UpperLipA_jnt/R_UpperLipA_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/R_UpperLipB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/R_UpperLipB_jnt/R_UpperLipB_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/UpperLipMid_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/LipsUpperAll_jnt/UpperLipMid_jnt/UpperLipMid_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Nose_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/Nose_jnt/Nose_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Brow_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Brow_jnt/R_Brow_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Cheek_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Cheek_jnt/R_Cheek_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Eye_ALL_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Eye_ALL_jnt/R_Eye_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Eye_ALL_jnt/R_Eye_jnt/R_Eye_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Eye_ALL_jnt/R_Eyelid_Lower_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Eye_ALL_jnt/R_Eyelid_Lower_jnt/R_Eyelid_Lower_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Eye_ALL_jnt/R_Eyelid_Upper_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/R_Eye_ALL_jnt/R_Eyelid_Upper_jnt/R_Eyelid_Upper_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/TeethUpper_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/Neck_jnt/Head_jnt/TeethUpper_jnt/TeethUpper_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Forearm_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Forearm_jnt/R_Forearm_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_PinkyA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_PinkyA_jnt/R_PinkyB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_PinkyA_jnt/R_PinkyB_jnt/R_PinkyC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_PinkyA_jnt/R_PinkyB_jnt/R_PinkyC_jnt/R_PinkyEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_PinkyA_jnt/R_PinkyB_jnt/R_PinkyC_jnt/R_PinkyEND_jnt/R_PinkyEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_RingA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_RingA_jnt/R_RingB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_RingA_jnt/R_RingB_jnt/R_RingC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_RingA_jnt/R_RingB_jnt/R_RingC_jnt/R_RingEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotA_jnt/R_RingA_jnt/R_RingB_jnt/R_RingC_jnt/R_RingEND_jnt/R_RingEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_IndexA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_IndexA_jnt/R_IndexB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_IndexA_jnt/R_IndexB_jnt/R_IndexC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_IndexA_jnt/R_IndexB_jnt/R_IndexC_jnt/R_IndexEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_IndexA_jnt/R_IndexB_jnt/R_IndexC_jnt/R_IndexEND_jnt/R_IndexEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_MiddleA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_MiddleA_jnt/R_MiddleB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_MiddleA_jnt/R_MiddleB_jnt/R_MiddleC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_MiddleA_jnt/R_MiddleB_jnt/R_MiddleC_jnt/R_MiddleEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_MiddleA_jnt/R_MiddleB_jnt/R_MiddleC_jnt/R_MiddleEND_jnt/R_MiddleEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_ThumbA_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_ThumbA_jnt/R_ThumbB_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_ThumbA_jnt/R_ThumbB_jnt/R_ThumbC_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_ThumbA_jnt/R_ThumbB_jnt/R_ThumbC_jnt/R_ThumbEND_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_CurlPivotB_jnt/R_ThumbA_jnt/R_ThumbB_jnt/R_ThumbC_jnt/R_ThumbEND_jnt/R_ThumbEND_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_Prop_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_Shoulder_jnt/R_Elbow_jnt/R_Wrist_jnt/R_Prop_jnt/R_Prop_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_ShoulderTwist_jnt
+    m_Weight: 1
+  - m_Path: RIG_Gregory/C_World_jnt/Root_jnt/Spine_jnt/Spine1_jnt/Spine2_jnt/R_Clavicle_jnt/R_ShoulderTwist_jnt/R_ShoulderTwist_jnt_end
+    m_Weight: 1
+  - m_Path: RIG_Gregory_LOD0
+    m_Weight: 1
+  - m_Path: RIG_Gregory_LOD1
+    m_Weight: 1
+  - m_Path: RIG_Gregory_LOD2
+    m_Weight: 1
+  - m_Path: RIG_Gregory_LOD3
+    m_Weight: 1

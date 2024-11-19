@@ -17,16 +17,26 @@ public class ChildController : BasePlayerController
     [Header("Arme du joueur", order = 3)]
 
     [SerializeField] private GameObject _item;
+    [SerializeField] private GameObject localObject;
     public GameObject item{
         get{
             return _item;
         }
         set{
             _item = Instantiate(value, itemSpawnPos);
+            _item.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+            localObject = FirstPersonItemPos.GetComponent<FirstPersonItem>().fpsItemDisplay(value.GetComponent<ItemBehaviour>().localObject);
         }
     }
     [SerializeField] private LayerMask itemLayer;
     [SerializeField] private Transform itemSpawnPos;
+    [SerializeField] private Transform FirstPersonItemPos;
+
+    protected override void Start()
+    {
+        base.Start();
+        FirstPersonItemPos.parent = Camera.main.transform;
+    }
 
     protected override void Update()
     {
@@ -46,15 +56,16 @@ public class ChildController : BasePlayerController
                 item.GetComponent<ItemBehaviour>().SecondaryFire();
             }
         }
-        
-        itemSpawnPos.transform.rotation = Camera.main.transform.rotation;
 
         // Si on souhaite drop un item;
         if(item != null){
             if(Input.GetKeyDown(KeyCode.G)){
+                Destroy(localObject);
                 item.GetComponent<ItemBehaviour>().DropItem();
             }
         }
+
+        animator.SetBool("HoldItem", item != null ? true : false);
     }
 
     
@@ -73,6 +84,7 @@ public class ChildController : BasePlayerController
         {
             if (Input.GetKey(KeyCode.E) && item == null)
             {
+                Debug.Log("A ramass‚ : " + hit.collider.name);
                 hit.collider.gameObject.GetComponent<PickableItem>().PickUp(gameObject);
             }
         }

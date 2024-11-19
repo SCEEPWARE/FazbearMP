@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: fazerblaster
   itemName: Fazerblaster
-  worldItem: {fileID: 1601313647573023197, guid: 29910dad8156baf4da1a3ff7a27b1b40,
+  worldItem: {fileID: 9032703411278166092, guid: 29910dad8156baf4da1a3ff7a27b1b40,
     type: 3}

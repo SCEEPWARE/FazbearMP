@@ -36,6 +36,7 @@ public class BasePlayerController : MonoBehaviour
     public Vector3 moveDir;
     [SerializeField] private LayerMask levelLayer;
     [SerializeField] private Transform groundCheckPosition;
+    [SerializeField] protected Animator animator;
 
     [Header("Informations", order = 1)]
     public bool isGrounded;
@@ -79,6 +80,8 @@ public class BasePlayerController : MonoBehaviour
                 // Debug.Log(stamina);
             }
         }
+
+        animator.SetFloat("Speed", moveSpeed);
 
 
     }

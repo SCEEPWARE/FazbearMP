@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Vector3 camOffset;
     [SerializeField] private float viewBobbingForce;
     [SerializeField] private float viewBobbingSpeed;
+    [SerializeField] private Transform neck;
 
 
     private float bobbingTimer = 0;
@@ -55,5 +56,7 @@ public class CameraController : MonoBehaviour
 
         _cameraObject.transform.position = gameObject.transform.position + camOffset + bobbingVector;
         _cameraObject.transform.rotation = Quaternion.Euler(xRot, yRot, 0);
+
+        // neck.localRotation = _cameraObject.transform.rotation;
     }
 }
