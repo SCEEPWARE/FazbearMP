@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public Vector2 initialPosition = new Vector2(0, 0);
     private Rigidbody2D rb; // Utilisation correcte du Rigidbody2D
     private bool inputsEnabled = true; // Variable pour activer/désactiver les inputs
+
+    public PizzaCollector pizzaCollector; // Référence au script PizzaCollector
 
     void Start()
     {
@@ -36,9 +41,10 @@ public class PlayerController : MonoBehaviour
             ProcessInputs();
 
             // Tirs avec la touche Espace
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && pizzaCollector.pizzaCount > 0)
             {
                 Shoot();
+                pizzaCollector.pizzaCount--; // Réduire le compteur de 1 à chaque tir
             }
         }
     }
@@ -74,3 +80,5 @@ public class PlayerController : MonoBehaviour
         rbProjectile.velocity = new Vector2(projectileSpeed, 0); // Le projectile se déplace vers la droite
     }
 }
+
+
