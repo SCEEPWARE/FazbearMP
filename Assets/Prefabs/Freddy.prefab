@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7785346884770725676}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.58959544, y: 0.8069933, z: 0}
+  m_LocalPosition: {x: -0.58959544, y: 0.8069933, z: 1}
   m_LocalScale: {x: 2.4515002, y: 2.2102501, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -144,13 +144,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a08c1d1986df5e409da570a2ef2e405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 10
+  initialPosition: {x: -10, y: 0}
+  pizzaCount: 0
+  maxPizzas: 6
+  prefabPizza: {fileID: 5056260408247512103, guid: 96c06a6f5bef28d40810aaa571d77e99,
+    type: 3}
+  pizzaPilePosition: {fileID: 3300959250592501954}
+  pizzaSpacing: 0.5
+  offsetX: 2.2
+  offsetY: 2.2
+  tempsEntreTirs: 0.2
   projectilePrefab: {fileID: 1628379505760497225, guid: 11636d1cc45d0cf43ac251a020fae4c6,
     type: 3}
-  firepoint: {fileID: 3981683999977133413, guid: 9fc72f5515a52ac40b29e271b3c8259d,
+  firepoint: {fileID: 4037936493979390247, guid: 9e2d679fbf798ae4c8ed82bf6615c89e,
     type: 3}
-  projectileSpeed: 10
-  initialPosition: {x: -10, y: 0}
+  projectileSpeed: 100
 --- !u!50 &-1007960356898278938
 Rigidbody2D:
   serializedVersion: 4
