@@ -99,4 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pizzaPrefab: {fileID: 442006714323580383, guid: 8b8b552a2a495fb409409e8d48372c09,
     type: 3}
-  spawnInterval: 1
+  spawnInterval: 10
