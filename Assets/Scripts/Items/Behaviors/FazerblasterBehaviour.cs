@@ -14,19 +14,12 @@ public class FazerblasterBehaviour : ItemBehaviour
         }
         --ammo; // on en enläve (si on tire)
         if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, 100f, playerLayer)){
-            if(hit.collider.TryGetComponent<AnimatronicController>(out AnimatronicController animCtrl)){
+            if(hit.collider.TryGetComponent<BasePlayerController>(out BasePlayerController animCtrl)){
                 Debug.Log(hit.collider.name);
-                if(hit.collider == animCtrl.headCollider){
-                    animCtrl.Stun();
-                }
+                // if(hit.collider == animCtrl.headCollider){
+                //     animCtrl.Stun();
+                // }
             }
         }
-    }
-
-    public override void DropItem()
-    {
-        GameObject droppedObject = Instantiate(itemData.worldItem, transform.position, transform.rotation);
-        droppedObject.GetComponent<PickableFazerBlaster>().ammo = this.ammo;
-        Destroy(gameObject);
     }
 }

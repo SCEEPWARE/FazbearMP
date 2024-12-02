@@ -26,13 +26,10 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab; // Le prefab du projectile
     public Transform firepoint; // Point de départ des tirs
     public float projectileSpeed = 10f; // Vitesse du projectile
-    private bool inputsEnabled = true; // Variable pour activer/désactiver les inputs
+    public bool inputsEnabled = true; // Variable pour activer/désactiver les inputs
 
     void Start()
     {
-        // Appliquer la position initiale au transform de l'objet
-        transform.position = initialPosition;
-
         // Récupérer le Rigidbody2D attaché à cet objet
         rb = GetComponent<Rigidbody2D>();
     }

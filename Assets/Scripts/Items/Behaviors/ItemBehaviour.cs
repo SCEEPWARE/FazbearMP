@@ -7,10 +7,9 @@ using UnityEngine;
 
 public class ItemBehaviour : MonoBehaviour
 {
-    public ItemData itemData;
     public bool InputEnabled;
     public Vector3 itemOffset;
-    public GameObject localObject;
+    public GameObject owner;
 
     public void Start(){
         transform.localRotation = Quaternion.Euler(Vector3.zero);
@@ -18,8 +17,5 @@ public class ItemBehaviour : MonoBehaviour
     }
     public virtual void MainFire(){}
     public virtual void SecondaryFire(){}
-    public virtual void DropItem(){
-        Instantiate(itemData.worldItem, transform.position, transform.rotation);
-        Destroy(gameObject);
-    }
+    public virtual void PostInitialization(){}
 }

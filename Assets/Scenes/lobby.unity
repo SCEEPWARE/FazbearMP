@@ -396,11 +396,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1911878178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 321}
-  m_SizeDelta: {x: 721.16, y: 122.2424}
-  m_Pivot: {x: 1.0619034, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -217.09985, y: -90}
+  m_SizeDelta: {x: -166.99994, y: 100}
+  m_Pivot: {x: 2.3, y: 0.67}
 --- !u!114 &326254640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fazzbear MP
+  m_text: Fazbear MP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -449,8 +449,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 170
-  m_fontSizeBase: 170
+  m_fontSize: 82.59
+  m_fontSizeBase: 82.59
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -208.65033, y: -41.108765, z: -989.6283, w: -175.55603}
+  m_margin: {x: -167.21002, y: -41.108765, z: 0.46450752, w: 33.980434}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -604,8 +604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearColorMode: 0
-  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
+  clearColorMode: 1
+  backgroundColorHDR: {r: 0, g: 0, b: 0, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
@@ -825,8 +825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -177}
-  m_SizeDelta: {x: 381.5508, y: 117.3107}
+  m_AnchoredPosition: {x: 0, y: -162}
+  m_SizeDelta: {x: 331.2, y: 90.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1267349756
 MonoBehaviour:
@@ -1222,6 +1222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e33bf5128f6e584ab0a6f5ff2928569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneToLoad: Game
 --- !u!4 &1592473485
 Transform:
   m_ObjectHideFlags: 0
@@ -1285,7 +1286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

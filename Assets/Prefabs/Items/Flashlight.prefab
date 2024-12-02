@@ -103,7 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18de124d7d51bd34facdc8811cde0e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: cd3c3b58aa373a640b501b926aee5cf6, type: 2}
+  droppedItem: {fileID: 3514980276864363110, guid: c24f7307e33d446428efade9902f8fdb,
+    type: 3}
   InputEnabled: 1
   itemOffset: {x: 0, y: 0, z: 0}
   localObject: {fileID: 4114380916946034604, guid: de21ae48c47d70040a8c5ca8d99322f3,

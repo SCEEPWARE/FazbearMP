@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private GameObject _cameraObject;
+    public GameObject _cameraObject;
     private float xRot = 0, yRot = 0;
 
     [Header("ParamŠtres de la cam‚ra", order = 0)]
@@ -20,12 +20,11 @@ public class CameraController : MonoBehaviour
     private float smoothSpeed = 0;
 
     // R‚f‚rence au player controller (pour des variables)
-    private BasePlayerController basePlayerController;
+    [SerializeField] private BasePlayerController basePlayerController;
 
     void Start()
     {
         // R‚f‚rence + verrouillage du curseur
-        _cameraObject = Camera.main.gameObject;
         basePlayerController = gameObject.GetComponent<BasePlayerController>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -48,8 +47,15 @@ public class CameraController : MonoBehaviour
         // Debug.Log(clampedSpeed);
 
         // Mouvement souris
-        yRot += Input.GetAxisRaw("Mouse X") * mouseSensitivity;
-        xRot -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
+        if(basePlayerController.controlChosen == BasePlayerController.ControlType.keyboard){
+            yRot += Input.GetAxisRaw("Mouse X") * mouseSensitivity;
+            xRot -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
+        }
+        if(basePlayerController.controlChosen == BasePlayerController.ControlType.controller){
+            yRot += Input.GetAxisRaw("Controller X") * mouseSensitivity;
+            xRot -= Input.GetAxisRaw("Controller Y") * mouseSensitivity;
+        }
+
         xRot = Mathf.Clamp(xRot, -90f, 90f); // On bloque la rotation verticale … 90ø pour que la cam‚ra ne soit pas … l'envers
         
         gameObject.transform.rotation = Quaternion.Euler(0, yRot, 0);

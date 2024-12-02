@@ -5,9 +5,9 @@ using UnityEngine;
 public class MonsterWaveSpawner : MonoBehaviour
 {
     public GameObject gosse;  // Le monstre que tu as déjà créé
-    public int[] monstersPerWave = new int[] { 3, 6, 9 };  // Nombre de monstres par vague
-    public Vector2 spawnAreaMin = new Vector2(-2, 10);  // Coin inférieur gauche de la zone de spawn
-    public Vector2 spawnAreaMax = new Vector2(10, -5);    // Coin supérieur droit de la zone de spawn
+    public int[] monstersPerWave = new int[] { 3, 4, 5 };  // Nombre de monstres par vague
+    public GameObject spawnLimitMin;
+    public GameObject spawnLimitMax;
     public GameObject gameOverSprite1;  // Le sprite de "game over" à afficher
     public Vector3 gameOverPosition1 = new Vector3(-4, 3, -5);  // Position où afficher le sprite de "game over"
     public GameObject gameOverSprite2;  // Le sprite de "game over" à afficher
@@ -20,6 +20,7 @@ public class MonsterWaveSpawner : MonoBehaviour
 
     void Start()
     {
+
         // Lancer le spawn des vagues au début
         SpawnWave();
     }
@@ -36,13 +37,13 @@ public class MonsterWaveSpawner : MonoBehaviour
         }
     }
 
-    System.Collections.IEnumerator SpawnMonsters(int count)
+    IEnumerator SpawnMonsters(int count)
     {
         for (int i = 0; i < count; i++)
         {
             // Calculer une position aléatoire dans la zone de spawn
-            float x = Random.Range(spawnAreaMin.x, spawnAreaMax.x);
-            float y = Random.Range(spawnAreaMin.y, spawnAreaMax.y);
+            float x = Random.Range(spawnLimitMin.transform.position.x, spawnLimitMax.transform.position.x);
+            float y = Random.Range(spawnLimitMin.transform.position.y, spawnLimitMax.transform.position.y);
             Vector3 spawnPosition = new Vector3(x, y, 0);
 
             // Créer un monstre à cette position
@@ -56,6 +57,7 @@ public class MonsterWaveSpawner : MonoBehaviour
         if (currentWave == 2)  // La vague 3 est l'indice 2
         {
             ShowGameOver();
+            GameManager.instance.arcadeLeft--;
         }
         else
         {

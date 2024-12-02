@@ -8,8 +8,8 @@ public class PickableFazerBlaster : PickableItem
 
     public override void PickUp(GameObject activator)
     {
-        activator.GetComponent<ChildController>().item = this.item;
-        activator.GetComponent<ChildController>().item.GetComponent<FazerblasterBehaviour>().ammo = this.ammo;
+        activator.GetComponent<BasePlayerController>().item = this.item;
+        activator.GetComponent<BasePlayerController>().item.GetComponent<FazerblasterBehaviour>().ammo = this.ammo;
         Destroy(gameObject);
     }
 }
