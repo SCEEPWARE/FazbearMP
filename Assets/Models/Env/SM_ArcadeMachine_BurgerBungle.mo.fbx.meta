@@ -3,7 +3,32 @@ guid: ec1934effe2ee114a9eccfaa753986a2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_ArcadeMetal
+    second: {fileID: 2100000, guid: bdd6eb779a287a84690027c793432c5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_BurgerBungle_Cabinet
+    second: {fileID: 2100000, guid: 51e97a325fc71704f9240024ef636f04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_BurgerBungle_Parts
+    second: {fileID: 2100000, guid: 6f34d90b67d99a6479a2020c566f9cd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_DeathGrip_Cabinet_Screen
+    second: {fileID: 2100000, guid: ec9e88c6bd292f344a30392f2e9c3295, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Glass_01b.003
+    second: {fileID: 2100000, guid: 9de466c1e4c94374ab8b3501a4e36196, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
