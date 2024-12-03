@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PizzaSpawner : MonoBehaviour
 {
     public GameObject pizzaPrefab;
-    public float spawnInterval = 5f;
+    private GameObject pizzaSpawned;
+    public float spawnInterval = 3f;
+    float delay;
 
-    private void Start()
+    private void Update()
     {
-        InvokeRepeating("SpawnPizza", 0f, spawnInterval);
-    }
-
-    private void SpawnPizza()
-    {
-        Instantiate(pizzaPrefab, transform.position, Quaternion.identity);
+        if(pizzaSpawned == null && delay < 0){
+            pizzaSpawned = Instantiate(pizzaPrefab, transform.position, Quaternion.identity);
+        } else if(pizzaSpawned != null){
+            delay = spawnInterval;
+        }
+        delay -= Time.deltaTime;
     }
 }

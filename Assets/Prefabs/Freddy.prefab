@@ -159,7 +159,8 @@ MonoBehaviour:
     type: 3}
   firepoint: {fileID: 4037936493979390247, guid: 9e2d679fbf798ae4c8ed82bf6615c89e,
     type: 3}
-  projectileSpeed: 100
+  projectileSpeed: 125
+  inputsEnabled: 1
 --- !u!50 &-1007960356898278938
 Rigidbody2D:
   serializedVersion: 4
