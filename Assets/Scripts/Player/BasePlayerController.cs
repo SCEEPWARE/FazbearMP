@@ -81,46 +81,42 @@ public class BasePlayerController : MonoBehaviour
     
     protected virtual void Update()
     {
-        if(!inputEnabled){
-            rb.velocity = new Vector3(0,0,0);
-            return;
-        }
         float keyX = 0, keyY = 0; 
         // Initialisation variable
         
+        if(inputEnabled){
+            // Mouvement clavier
+            if(controlChosen == ControlType.keyboard){
+                keyX = Input.GetAxisRaw("Horizontal");
+                keyY = Input.GetAxisRaw("Vertical");
 
-        // Mouvement clavier
-        if(controlChosen == ControlType.keyboard){
-            keyX = Input.GetAxisRaw("Horizontal");
-            keyY = Input.GetAxisRaw("Vertical");
+                if(item != null){
+                    if(Input.GetButtonDown("Fire1")){
+                        item.GetComponent<ItemBehaviour>().MainFire();
+                    }
+                    if(Input.GetButtonDown("Fire2")){
+                        item.GetComponent<ItemBehaviour>().SecondaryFire();
+                    }
+                }
 
-            if(item != null){
-                if(Input.GetButtonDown("Fire1")){
-                    item.GetComponent<ItemBehaviour>().MainFire();
-                }
-                if(Input.GetButtonDown("Fire2")){
-                    item.GetComponent<ItemBehaviour>().SecondaryFire();
-                }
+                moveSpeed = Input.GetButton("Sprint") && stamina > 0 ? runSpeed : walkSpeed;
             }
 
-            moveSpeed = Input.GetButton("Sprint") && stamina > 0 ? runSpeed : walkSpeed;
-        }
+            // Mouvement manette
+            if(controlChosen == ControlType.controller){
+                keyX = Input.GetAxisRaw("HorizontalController");
+                keyY = Input.GetAxisRaw("VerticalController");
 
-        // Mouvement manette
-        if(controlChosen == ControlType.controller){
-            keyX = Input.GetAxisRaw("HorizontalController");
-            keyY = Input.GetAxisRaw("VerticalController");
-
-            if(item != null){
-                if(Input.GetButtonDown("Fire1Controller")){
-                    item.GetComponent<ItemBehaviour>().MainFire();
+                if(item != null){
+                    if(Input.GetButtonDown("Fire1Controller")){
+                        item.GetComponent<ItemBehaviour>().MainFire();
+                    }
+                    if(Input.GetButtonDown("Fire2Controller")){
+                        item.GetComponent<ItemBehaviour>().SecondaryFire();
+                    }
                 }
-                if(Input.GetButtonDown("Fire2Controller")){
-                    item.GetComponent<ItemBehaviour>().SecondaryFire();
-                }
+                moveSpeed = Input.GetButton("SprintController") && stamina > 0 ? runSpeed : walkSpeed;
             }
-
-            moveSpeed = Input.GetButton("SprintController") && stamina > 0 ? runSpeed : walkSpeed;
         }
 
         moveDir = (transform.forward * keyY + transform.right * keyX).normalized;
@@ -174,9 +170,15 @@ public class BasePlayerController : MonoBehaviour
         // Interaction avec le moteur physique
 
         // Mouvement
+        if(inputEnabled){
         rb.velocity = new Vector3(moveDir.x * moveSpeed, rb.velocity.y, moveDir.z * moveSpeed);
+        } else { rb.velocity = Vector3.zero;} // pour ‚viter que le joueur glisse, mˆme si ses inputs sont disabled
 
+
+        // … ignorer
         // Check si le joueur touche le sol (sert … rien depuis que la feature de saut a ‚t‚ d‚gag‚e de ce monde o7)
+
+
         // isGrounded = Physics.CheckSphere(groundCheckPosition.position, -0.1f, levelLayer);
 
 

@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LobbyManager : MonoBehaviour
 {
+    void Start(){
+        Cursor.lockState = CursorLockMode.None;
+    }
     public string SceneToLoad;
     public void PlayGame()
     {

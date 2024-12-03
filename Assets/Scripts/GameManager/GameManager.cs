@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     // Information d'initialisation de la partie
     [Header("Paramätres d'initialisation", order = 0)]
 
-    public List<Transform> arcadeSpawn = new();
+    public GameObject[] arcadeSpawn;
     public GameObject[] arcadeObject;
     public GameObject[] players;
     public int arcadeLeft;
@@ -40,8 +40,12 @@ public class GameManager : MonoBehaviour
         gameOverScreen.gameObject.SetActive(false);
         jumpScareCamera.SetActive(false);
 
-        arcadeLeft = arcadeObject.Length;
+        arcadeSpawn = GameObject.FindGameObjectsWithTag("SpawnArcade");
+
+        arcadeLeft = arcadeObject.Length - 1;
         players = GameObject.FindGameObjectsWithTag("Player");
+
+        InitialiseArcade();
     }
 
     // Update is called once per frame
@@ -54,8 +58,31 @@ public class GameManager : MonoBehaviour
 
     public void InitialiseArcade(){
         for(int i = 0; i < arcadeObject.Length; ++i){
-            int j = Random.Range(0, arcadeSpawn.Count);
-            Instantiate(arcadeObject[i], arcadeSpawn[j]);
+            int j = Random.Range(0, arcadeSpawn.Length - 1);
+            arcadeObject[i].transform.position = arcadeSpawn[j].transform.position;
+            arcadeObject[i].transform.rotation = arcadeSpawn[j].transform.rotation;
+
+            
+        }
+
+        for(int i = 0; i < arcadeObject.Length; ++i){
+            int j = Random.Range(0, arcadeSpawn.Length);
+            while(arcadeSpawn[j] == null){
+                j = Random.Range(0, arcadeSpawn.Length);
+            }
+            Debug.Log("Spawn arcade " + i + " : " + j);
+
+            arcadeObject[i].transform.position = arcadeSpawn[j].transform.position;
+            arcadeObject[i].transform.rotation = arcadeSpawn[j].transform.rotation;
+
+            Destroy(arcadeSpawn[j]);
+            arcadeSpawn[j] = null;
+
+            Debug.Log(arcadeSpawn[j]);
+        }
+
+        foreach(GameObject arcade in arcadeSpawn){
+            Destroy(arcade);
         }
     }
 

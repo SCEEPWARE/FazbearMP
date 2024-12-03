@@ -6,8 +6,8 @@ public class MonsterWaveSpawner : MonoBehaviour
 {
     public GameObject gosse;  // Le monstre que tu as déjà créé
     public int[] monstersPerWave = new int[] { 3, 4, 5 };  // Nombre de monstres par vague
-    public GameObject spawnLimitMin;
-    public GameObject spawnLimitMax;
+    [SerializeField] private GameObject spawnLimitMin;
+    [SerializeField] public GameObject spawnLimitMax;
     public GameObject gameOverSprite1;  // Le sprite de "game over" à afficher
     public Vector3 gameOverPosition1 = new Vector3(-4, 3, -5);  // Position où afficher le sprite de "game over"
     public GameObject gameOverSprite2;  // Le sprite de "game over" à afficher
@@ -17,6 +17,7 @@ public class MonsterWaveSpawner : MonoBehaviour
 
     private int currentWave = 0;
     private int monstersAlive = 0;  // Nombre de monstres vivants dans la vague actuelle
+    public bool isFinished;
 
     void Start()
     {
@@ -33,42 +34,79 @@ public class MonsterWaveSpawner : MonoBehaviour
             monstersAlive = monstersToSpawn;  // Réinitialiser le nombre de monstres vivants pour la nouvelle vague
 
             // Lancer un spawn de monstres pour cette vague
-            StartCoroutine(SpawnMonsters(monstersToSpawn));
+            SpawnMonsters(monstersToSpawn);
         }
     }
 
-    IEnumerator SpawnMonsters(int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
+    void SpawnMonsters(int count){
+        for(int i = 0; i < count; ++i){
             // Calculer une position aléatoire dans la zone de spawn
-            float x = Random.Range(spawnLimitMin.transform.position.x, spawnLimitMax.transform.position.x);
-            float y = Random.Range(spawnLimitMin.transform.position.y, spawnLimitMax.transform.position.y);
+            Debug.Log(spawnLimitMin.gameObject.transform.position.x);
+            Debug.Log(spawnLimitMin.gameObject.transform.position.y);
+            Debug.Log(spawnLimitMax.gameObject);
+            float x = Random.Range(spawnLimitMin.gameObject.transform.position.x, spawnLimitMax.transform.position.x);
+            Debug.Log(x);
+            float y = Random.Range(spawnLimitMin.gameObject.transform.position.y, spawnLimitMax.transform.position.y);
             Vector3 spawnPosition = new Vector3(x, y, 0);
 
             // Créer un monstre à cette position
-            Instantiate(gosse, spawnPosition, Quaternion.identity);
+            GameObject spawnedChild = Instantiate(gosse, spawnPosition, Quaternion.identity);
+            spawnedChild.GetComponent<EnemyHealth>().waveSpawner = this;
         }
+    }
 
-        // Attendre que tous les monstres soient tués
-        yield return new WaitUntil(() => monstersAlive == 0);
-
-        // Si c'est la vague 3, afficher le game over et désactiver les entrées
-        if (currentWave == 2)  // La vague 3 est l'indice 2
-        {
-            ShowGameOver();
-            GameManager.instance.arcadeLeft--;
-        }
-        else
-        {
-            // Passer à la vague suivante
-            currentWave++;
-            if (currentWave < monstersPerWave.Length)
+    void Update(){
+        if(monstersAlive == 0){
+            // Si c'est la vague 3, afficher le game over et désactiver les entrées
+            if (currentWave == 2 && !isFinished)  // La vague 3 est l'indice 2
             {
-                SpawnWave();
+                // ShowGameOver();
+                GameManager.instance.arcadeLeft--;
+                isFinished = true;
+            }
+            else
+            {
+                // Passer à la vague suivante
+                currentWave++;
+                if (currentWave < monstersPerWave.Length)
+                {
+                    SpawnWave();
+                }
             }
         }
     }
+
+
+
+    // IEnumerator SpawnMonsters(int count)
+    // {
+    //     for (int i = 0; i < count; i++)
+    //     {
+    //         SpawnMonster();
+    //     }
+
+    //     // Attendre que tous les monstres soient tués
+    //     yield return new WaitUntil(() => monstersAlive == 0);
+
+    //     // Si c'est la vague 3, afficher le game over et désactiver les entrées
+    //     if (currentWave == 2)  // La vague 3 est l'indice 2
+    //     {
+    //         ShowGameOver();
+    //         GameManager.instance.arcadeLeft--;
+    //     }
+    //     else
+    //     {
+    //         // Passer à la vague suivante
+    //         currentWave++;
+    //         if (currentWave < monstersPerWave.Length)
+    //         {
+    //             SpawnWave();
+    //         }
+    //     }
+    // }
+
+
+
 
     // Cette fonction sera appelée lorsqu'un monstre est tué
     public void OnMonsterDestroyed()

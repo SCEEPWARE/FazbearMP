@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
     public float damageEffectDuration = 0.5f; // Durée de l'effet de dégât (0.5 sec)
 
     private SpriteRenderer spriteRenderer; // Référence au SpriteRenderer
-    private MonsterWaveSpawner waveSpawner;  // Référence au MonsterWaveSpawner
+    public MonsterWaveSpawner waveSpawner;  // Référence au MonsterWaveSpawner
 
     void Start()
     {
@@ -18,9 +18,6 @@ public class EnemyHealth : MonoBehaviour
 
         // Assigner le sprite normal au début
         spriteRenderer.sprite = normalSprite;
-
-        // Récupérer la référence à MonsterWaveSpawner
-        waveSpawner = FindObjectOfType<MonsterWaveSpawner>();
     }
 
     // Fonction pour infliger des dégâts à l'ennemi

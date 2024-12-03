@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ennemi
   - Pizza
+  - SpawnArcade
   layers:
   - Default
   - TransparentFX

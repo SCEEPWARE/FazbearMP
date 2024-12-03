@@ -32,10 +32,7 @@ public class CameraController : MonoBehaviour
     
     void Update()
     {
-        // Si la cam‚ra est d‚sactiv‚e, on ne fait rien
-        if(!basePlayerController.cameraEnabled){
-            return;
-        }
+        
 
         // view bobbing (mouvement de la cam‚ra lorsqu'on se d‚place, on ne veut qu'un demi-cercle donc on prend la valeur absolu du sinus pour le mouvement vertical)
 
@@ -46,16 +43,17 @@ public class CameraController : MonoBehaviour
         bobbingTimer = basePlayerController.moveDir.magnitude > 0 ? bobbingTimer + Time.deltaTime : 0;
         // Debug.Log(clampedSpeed);
 
-        // Mouvement souris
-        if(basePlayerController.controlChosen == BasePlayerController.ControlType.keyboard){
-            yRot += Input.GetAxisRaw("Mouse X") * mouseSensitivity;
-            xRot -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
+        // Si les contr“les de la cam‚ra est d‚sactiv‚e, on ne r‚cupŠre pas d'input
+        if(basePlayerController.cameraEnabled){
+            if(basePlayerController.controlChosen == BasePlayerController.ControlType.keyboard){
+                yRot += Input.GetAxisRaw("Mouse X") * mouseSensitivity;
+                xRot -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
+            }
+            if(basePlayerController.controlChosen == BasePlayerController.ControlType.controller){
+                yRot += Input.GetAxisRaw("Controller X") * mouseSensitivity;
+                xRot -= Input.GetAxisRaw("Controller Y") * mouseSensitivity;
+            }
         }
-        if(basePlayerController.controlChosen == BasePlayerController.ControlType.controller){
-            yRot += Input.GetAxisRaw("Controller X") * mouseSensitivity;
-            xRot -= Input.GetAxisRaw("Controller Y") * mouseSensitivity;
-        }
-
         xRot = Mathf.Clamp(xRot, -90f, 90f); // On bloque la rotation verticale … 90ø pour que la cam‚ra ne soit pas … l'envers
         
         gameObject.transform.rotation = Quaternion.Euler(0, yRot, 0);
