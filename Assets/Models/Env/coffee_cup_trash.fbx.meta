@@ -1,9 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f066fe0dfd2b020448e85ef5a91fcf54
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
+=======
+guid: 45659aa2b05e7b64e9d4832252c3dde6
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallTrash01_MAT
+    second: {fileID: 2100000, guid: b348c3465d2240240b6dd030d32d18f1, type: 2}
+>>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
   materials:
     materialImportMode: 2
     materialName: 0

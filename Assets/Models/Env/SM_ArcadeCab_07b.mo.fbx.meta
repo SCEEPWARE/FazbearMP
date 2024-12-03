@@ -3,7 +3,27 @@ guid: 4f0ad5d413001854cb1440130fa49dd4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_ArcadeCab_07b
+    second: {fileID: 2100000, guid: c45c320a376a4dc43b7498faa6e5ada1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_ArcadeCab_07c
+    second: {fileID: 2100000, guid: e3df045b552a1264b98002c8e359d24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Buttons_01a.002
+    second: {fileID: 2100000, guid: a1526225b28b7e44ba39f6636083e018, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Glass_01b.002
+    second: {fileID: 2100000, guid: e55c717e34187724cb7d207b30d69a6f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

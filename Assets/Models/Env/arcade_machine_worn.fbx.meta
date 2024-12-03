@@ -1,9 +1,27 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: dcdefdd68ab46aa4683ced7869a450a4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
+=======
+guid: 0b1986b18b9729249903099bc125c992
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_ArcadeCab_03a
+    second: {fileID: 2100000, guid: 1a43b7e3d8c6b8145883e532b6c34ffc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Glass_01b
+    second: {fileID: 2100000, guid: e55c717e34187724cb7d207b30d69a6f, type: 2}
+>>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
   materials:
     materialImportMode: 2
     materialName: 0

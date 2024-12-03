@@ -1,9 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a1bab25e9d0af594eafa19cc11d78adc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
+=======
+guid: ea42ba24ac5af36458b4431433d5e71a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SimpleCobweb1
+    second: {fileID: 2100000, guid: 1ab2e59b1dbc84641b91fee29e230fe2, type: 2}
+>>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
   materials:
     materialImportMode: 2
     materialName: 0

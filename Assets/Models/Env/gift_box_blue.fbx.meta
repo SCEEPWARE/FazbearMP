@@ -1,9 +1,27 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e693fc97d83da934bafe9edbeb5fd436
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
+=======
+guid: 8419ece9b75ca1b4d95e061eeadf11e5
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ENV_Mat_Gift_Wrapping_Blue
+    second: {fileID: 2100000, guid: 3de06eef615a16d4bafd3cf3a8959fbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ENV_Mat_Gift_Wrapping_White.001
+    second: {fileID: 2100000, guid: ad1fc4ef226282d4b978a815bf422a81, type: 2}
+>>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,27 @@ guid: a4ef1c39124af0c40b25924483762b3e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Mat_Chica_Body
+    second: {fileID: 2100000, guid: ffb4738cf15301a4189f9e130c22a510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Emissive.003
+    second: {fileID: 2100000, guid: 8f24775dafb3812418740bf4b2db254c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GlassEmissive.003
+    second: {fileID: 2100000, guid: 29628cb1247d86248a36dd50f92781ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_LightBulb_Inst.003
+    second: {fileID: 2100000, guid: 9edce2b8148e4a447bab293c76bea84a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
