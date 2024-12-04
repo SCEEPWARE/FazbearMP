@@ -1,13 +1,14 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 76669d831be0bfa4ab0ab8ff5f63df04
-=======
-guid: 9e7664e88bc71e54e837a827c0e04319
->>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallTrash02_MAT
+    second: {fileID: 2100000, guid: 3c6c34857671c5a48aaf8dcccfa9888e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -52,7 +53,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -65,12 +66,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:

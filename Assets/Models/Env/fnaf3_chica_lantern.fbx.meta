@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Char_Mat_Chica_Body
-    second: {fileID: 2100000, guid: ffb4738cf15301a4189f9e130c22a510, type: 2}
+    second: {fileID: 2100000, guid: 1af2aa888fa57db4ab21b30b7e1ae17a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MI_Emissive.003
-    second: {fileID: 2100000, guid: 8f24775dafb3812418740bf4b2db254c, type: 2}
+      name: MI_Emissive
+    second: {fileID: 2100000, guid: a09b4955085ef7b4cbb1f4b974dc75ad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_GlassEmissive.003
-    second: {fileID: 2100000, guid: 29628cb1247d86248a36dd50f92781ef, type: 2}
+      name: M_GlassEmissive
+    second: {fileID: 2100000, guid: a288df75a39665148ad89d4e7e7876fb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_LightBulb_Inst.003
-    second: {fileID: 2100000, guid: 9edce2b8148e4a447bab293c76bea84a, type: 2}
+      name: M_LightBulb_Inst
+    second: {fileID: 2100000, guid: d608d37daf19baa469ac73b88d84bec6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -68,7 +68,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -81,12 +81,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:

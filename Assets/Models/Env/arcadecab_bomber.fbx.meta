@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MI_ArcadeCab_04b
-    second: {fileID: 2100000, guid: 50cafdde034a1414b81c29c889d14199, type: 2}
+    second: {fileID: 2100000, guid: 7da3e2c22a809bd4c8bb71b27fd36517, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MI_Glass_01b.004
-    second: {fileID: 2100000, guid: e55c717e34187724cb7d207b30d69a6f, type: 2}
+      name: MI_Glass_01b
+    second: {fileID: 2100000, guid: 133f08cfb32b6c047b67277350c3f696, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -58,7 +58,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -71,12 +71,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:

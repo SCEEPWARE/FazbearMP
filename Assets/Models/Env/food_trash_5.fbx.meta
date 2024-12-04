@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 10a0ac3c94e19e54abbaa99a14b10063
-=======
-guid: 3392f940685f0694db4aad8cfd7aeb48
->>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -52,7 +48,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -65,12 +61,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:

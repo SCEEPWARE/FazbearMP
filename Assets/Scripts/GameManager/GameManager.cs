@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] arcadeSpawn;
     public GameObject[] arcadeObject;
-    public GameObject[] players;
+    public GameObject childPlayer;
+    public GameObject animPlayer;
     public int arcadeLeft;
 
     [SerializeField] private GameObject jumpScareCamera;
@@ -43,7 +44,6 @@ public class GameManager : MonoBehaviour
         arcadeSpawn = GameObject.FindGameObjectsWithTag("SpawnArcade");
 
         arcadeLeft = arcadeObject.Length - 1;
-        players = GameObject.FindGameObjectsWithTag("Player");
 
         InitialiseArcade();
     }
@@ -106,6 +106,11 @@ public class GameManager : MonoBehaviour
         for(int i = 0; i < cameras.Length; ++i){
             cameras[i].gameObject.SetActive(false);
         }
+        childPlayer.GetComponent<AudioListener>().enabled = false;
+        childPlayer.GetComponent<BasePlayerController>().inputEnabled = false;
+        animPlayer.GetComponent<BasePlayerController>().inputEnabled = false;
+
+
         gameCanvas.gameObject.SetActive(false);
         jumpScareFreddy.SetTrigger("Jumpscare");
         jumpScareFreddy.gameObject.GetComponent<AudioSource>().Play();
@@ -119,6 +124,10 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator EndGameCoroutine(String winner){
         DisplayGameOverScreen(winner);
+        childPlayer.GetComponent<AudioSource>().Stop();
+        childPlayer.GetComponent<AudioListener>().enabled = false;
+        childPlayer.GetComponent<BasePlayerController>().inputEnabled = false;
+        animPlayer.GetComponent<BasePlayerController>().inputEnabled = false;
 
         yield return new WaitForSeconds(5);
 

@@ -10,7 +10,7 @@ public class FlashlightBehaviour : ItemBehaviour
     public void Start(){
         flashLight = GetComponentInChildren<Light>();
         flashLight.transform.SetParent(owner.GetComponent<CameraController>()._cameraObject.transform, false);
-        flashLight.transform.position += new Vector3(0, 0, 0.2f);
+        flashLight.transform.localPosition += new Vector3(0, 0, 0.3f);
     }
     public override void MainFire(){
         flashLight.enabled = !flashLight.enabled;

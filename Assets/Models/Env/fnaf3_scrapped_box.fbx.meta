@@ -3,7 +3,42 @@ guid: 42637654107470440863c2d8a6bd6fc7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard_1
+    second: {fileID: 2100000, guid: a54228c5ab5915247b8f9afe6f27c359, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Mat_Bonnie_New_Guitar
+    second: {fileID: 2100000, guid: 6ba350f5d3d275a45ae0f95f7fc59b77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Mat_Endo
+    second: {fileID: 2100000, guid: 601d2aa7605d75a49aedc3734e325829, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Mat_Foxy_Body
+    second: {fileID: 2100000, guid: 1b8c7963b85a2b4489a95c57f3f829c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Mat_Freddy_Body
+    second: {fileID: 2100000, guid: f12f0b66d94eaf84e8bf2d50842e676e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Mat_Mangle_Body
+    second: {fileID: 2100000, guid: 84806ffadf5a6a845aea14706e52abc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Char_Mat_ToyBonnie
+    second: {fileID: 2100000, guid: c0292ffd16f659d4c811edae5c1cd646, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -48,7 +83,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -61,12 +96,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:

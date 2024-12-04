@@ -7,8 +7,15 @@ public class ActivateArcade : MonoBehaviour
     public GameObject currentUser;
     public GameObject miniGame;
     public GameObject gameCam;
+
+    [SerializeField] private Material offMaterial;
+    [SerializeField] private AudioSource audioSource;
+
+    // Cache
+    private MonsterWaveSpawner arcade;
+
     public void AccessArcade(GameObject activator){
-        if(miniGame.GetComponentInChildren<MonsterWaveSpawner>().isFinished){
+        if(arcade.isFinished){
             return;
         }
         Debug.Log("arcade is accessed");
@@ -30,6 +37,7 @@ public class ActivateArcade : MonoBehaviour
     }
     void Start()
     {
+        arcade = miniGame.GetComponentInChildren<MonsterWaveSpawner>();
         gameCam = miniGame.GetComponentInChildren<Camera>().gameObject;
         gameCam.SetActive(false);
         miniGame.GetComponentInChildren<PlayerController>().inputsEnabled = false;
@@ -38,8 +46,12 @@ public class ActivateArcade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && currentUser != null || miniGame.GetComponentInChildren<MonsterWaveSpawner>().isFinished && currentUser != null){
+        if(Input.GetKeyDown(KeyCode.Escape) && currentUser != null || arcade.isFinished && currentUser != null){
             ExitArcade();
+        }
+        if(arcade.isFinished){
+            audioSource.Stop();
+            gameObject.GetComponent<Renderer>().material = offMaterial;
         }
     }
 }

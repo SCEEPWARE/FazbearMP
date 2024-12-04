@@ -9,7 +9,7 @@ public class EmissiveController : MonoBehaviour
     public float emissiveIntensityOn = 10f; // Intensité d'émission lorsque la lumière est allumée
     public float emissiveIntensityOff = 0f; // Intensité d'émission lorsque la lumière est éteinte
 
-    private Renderer emissiveRenderer; // Référence au Renderer de cet objet
+    [SerializeField] private Renderer emissiveRenderer; // Référence au Renderer de cet objet
 
     void Start()
     {
@@ -44,7 +44,8 @@ public class EmissiveController : MonoBehaviour
         if (emissiveRenderer != null && targetLight != null)
         {
             float intensity = targetLight.enabled ? emissiveIntensityOn : emissiveIntensityOff;
-            emissiveRenderer.material.SetColor("_EmissiveColor", emissiveColor * intensity);
+            emissiveRenderer.materials[2].SetColor("_EmissiveColor", emissiveColor * intensity);
+            emissiveRenderer.materials[3].SetColor("_EmissiveColor", emissiveColor * intensity);
         }
     }
 }

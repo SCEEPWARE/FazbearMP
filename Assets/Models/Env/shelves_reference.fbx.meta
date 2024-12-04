@@ -1,13 +1,29 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: c5ea3df9ab9156c47b7d12abc3e7a784
-=======
-guid: 0591c210c2d26b0408ec2de3a59403e4
->>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CardboardBoxes
+    second: {fileID: 2100000, guid: bd0800f42c55ffa42b91aab13960f02c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Container
+    second: {fileID: 2100000, guid: 5b1e5eeeef1c1ba43bfbfbf7a63770ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate4
+    second: {fileID: 2100000, guid: 32db76d64e6302a4287f94ca9fc87fb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shelves
+    second: {fileID: 2100000, guid: 5e7a0e86ba327e246863356563d3cdff, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -52,7 +68,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -65,12 +81,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:

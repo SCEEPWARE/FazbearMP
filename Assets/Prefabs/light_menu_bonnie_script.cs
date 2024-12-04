@@ -8,7 +8,7 @@ public class BlinkingLight : MonoBehaviour
     void Start()
     {
         pointLight = GetComponent<Light>();
-        SetNextBlinkTime();
+        SetNextBlinkTime(GetHighBlinkTime());
     }
 
     void Update()
@@ -17,13 +17,20 @@ public class BlinkingLight : MonoBehaviour
         {
 
             pointLight.enabled = !pointLight.enabled;
-            SetNextBlinkTime();
+            SetNextBlinkTime(pointLight.enabled? GetHighBlinkTime() : GetLowBlinkTime());
         }
     }
 
-    void SetNextBlinkTime()
+    void SetNextBlinkTime(float delay)
     {
-        float randomDelay = Random.Range(0f, 1f);
-        nextBlinkTime = Time.time + randomDelay;
+        nextBlinkTime = Time.time + delay;
+    }
+
+    float GetLowBlinkTime(){
+        return Random.Range(0f, 0.75f);
+    }
+
+    float GetHighBlinkTime(){
+        return Random.Range(0.5f, 4f);
     }
 }

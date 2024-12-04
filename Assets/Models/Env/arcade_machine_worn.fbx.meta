@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: dcdefdd68ab46aa4683ced7869a450a4
-ModelImporter:
-  serializedVersion: 22200
-  internalIDToNameTable: []
-  externalObjects: {}
-=======
-guid: 0b1986b18b9729249903099bc125c992
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -15,13 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MI_ArcadeCab_03a
-    second: {fileID: 2100000, guid: 1a43b7e3d8c6b8145883e532b6c34ffc, type: 2}
+    second: {fileID: 2100000, guid: 5af36f56f11239d4ebeb1e1c13eec867, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MI_Glass_01b
-    second: {fileID: 2100000, guid: e55c717e34187724cb7d207b30d69a6f, type: 2}
->>>>>>> 2620a7f271c8ac1c931bb3f6d599aca65d5b59a9
+    second: {fileID: 2100000, guid: b6aad213c033ce749903e6fee3f35de3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -66,7 +58,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -79,12 +71,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:

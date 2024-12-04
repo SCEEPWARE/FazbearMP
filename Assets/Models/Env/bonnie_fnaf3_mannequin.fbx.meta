@@ -8,27 +8,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Char_Mat_Bonnie_Body
-    second: {fileID: 2100000, guid: 476cfd56478c83e4b8e376a0547d486d, type: 2}
+    second: {fileID: 2100000, guid: b64530f634520b94eb85109ac7fb61fa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ENV_MAT_Mannequin
-    second: {fileID: 2100000, guid: 8fea5abb7dbd66f4fa2b1b57f34882f3, type: 2}
+    second: {fileID: 2100000, guid: d5fd013584277804698b1775a12cf524, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MI_Emissive
-    second: {fileID: 2100000, guid: f3e26a543ea17f34e858c692a098dbb7, type: 2}
+    second: {fileID: 2100000, guid: a09b4955085ef7b4cbb1f4b974dc75ad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: M_GlassEmissive
-    second: {fileID: 2100000, guid: 3b11e9b2fe9ac9f409414df16acb94db, type: 2}
+    second: {fileID: 2100000, guid: a288df75a39665148ad89d4e7e7876fb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: M_LightBulb_Inst
-    second: {fileID: 2100000, guid: 7e8f417c0d7f03a468e02c6ab38028fb, type: 2}
+    second: {fileID: 2100000, guid: d608d37daf19baa469ac73b88d84bec6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -73,7 +73,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -86,12 +86,12 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
+    secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 4
+    secondaryUVMinObjectScale: 0.8
+    secondaryUVPackMargin: 48
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
