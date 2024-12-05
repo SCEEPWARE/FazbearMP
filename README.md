@@ -6,14 +6,14 @@ Un joueur incarne Gregory (l'enfant) et doit s'échapper de la pizzeria en réus
 L'autre joueur, qui incarne Freddy (l'animatronique), doit le tuer avant qu'il ne réussisse.<br>
 
 ## Contrôles
-Gregory :
+Gregory : <br>
 ZQSD - se déplacer<br>
 E - intéragir<br>
 Clic droit - allumer et éteindre lampe torche (enfant)<br>
 Espace - tirer pizza (arcade)<br>
 Echap - quitter arcade<br>
 
-Animatronique :
+Animatronique : <br>
 Joysticks - se déplacer / regarder<br>
 RB (XBOX) / R1 (PS4) - Attaquer
 
