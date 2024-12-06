@@ -7,7 +7,7 @@ public class MonsterWaveSpawner : MonoBehaviour
     public GameObject gosse;  // Le monstre que tu as déjà créé
     public int[] monstersPerWave = new int[] { 3, 4, 5 };  // Nombre de monstres par vague
     [SerializeField] private GameObject spawnLimitMin;
-    [SerializeField] public GameObject spawnLimitMax;
+    [SerializeField] private GameObject spawnLimitMax;
     public GameObject gameOverSprite1;  // Le sprite de "game over" à afficher
     public Vector3 gameOverPosition1 = new Vector3(-4, 3, -5);  // Position où afficher le sprite de "game over"
     public GameObject gameOverSprite2;  // Le sprite de "game over" à afficher
@@ -50,7 +50,7 @@ public class MonsterWaveSpawner : MonoBehaviour
             Vector3 spawnPosition = new Vector3(x, y, 0);
 
             // Créer un monstre à cette position
-            GameObject spawnedChild = Instantiate(gosse, spawnPosition, Quaternion.identity);
+            GameObject spawnedChild = Instantiate(gosse, spawnPosition, Quaternion.identity, transform.parent);
             spawnedChild.GetComponent<EnemyHealth>().waveSpawner = this;
         }
     }
